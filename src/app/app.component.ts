@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-material-demo';
+  isChecked = true;
+  onChange($event){
+    console.log($event)
+  }
 }
