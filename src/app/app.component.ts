@@ -11,4 +11,10 @@ export class AppComponent {
   onChange($event){
     console.log($event)
   }
+  colors = [
+    { id: 1, name: 'Red'},
+    { id: 2, name: 'Blue'},
+    { id: 3, name: 'Green'},
+  ]
+  color = 2;
 }

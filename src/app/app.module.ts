@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { NoopAnimationsModule} from '@angular/platform-browser/animations'
-import { MatCheckboxModule, MatRadioModule } from '@angular/material'
+import { MatCheckboxModule, MatRadioModule, MatSelectModule } from '@angular/material'
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +14,9 @@ import { MatCheckboxModule, MatRadioModule } from '@angular/material'
     BrowserModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSelectModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
