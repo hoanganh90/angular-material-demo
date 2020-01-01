@@ -29,9 +29,11 @@
 <div>
   <h4>Basic native select</h4>
 
-  <mat-select [(ngModel)] = "color">
-    <mat-option 
-      *ngFor="let color of colors"
-      [value]="color.id"> {{ color.name }}</mat-option>
-  </mat-select>
+  <mat-form-field >
+    <input type="text" matInput placeholder="Username">
+    <mat-hint>
+      Type an unique username
+    </mat-hint>
+    <span matSufix>@domain.com</span>
+  </mat-form-field>
 </div>
